@@ -1,4 +1,4 @@
-package com.comparecarrinhos.comparecarrinhos;
+package com.comparecarrinhos;
 
 public class CartServiceTest {
 }

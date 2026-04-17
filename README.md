@@ -28,7 +28,7 @@ O **Compare Carrinhos** é uma aplicação backend desenvolvida em **Java** e **
 ### Passo a Passo
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/felipecavcastro/compare-carrinhos
    ```
    
 2. **Abra o projeto:**
@@ -41,5 +41,5 @@ O Maven irá baixar automaticamente as bibliotecas necessárias (Spring Boot, SQ
 Rode o arquivo ComparecarrinhosApplication.java. O banco de dados SQLite (comparecarrinhos.db) será criado automaticamente na primeira execução.
 
 5. **Acesse a API:**
-Documentação Swagger: http://localhost:8080/swagger-ui/index.html
-Interface Web: http://localhost:8080/index.html
+    - **Documentação Swagger:** [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+    - **Interface Web:** [http://localhost:8080/index.html](http://localhost:8080/index.html)
