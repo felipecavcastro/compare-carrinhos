@@ -6,6 +6,9 @@ import com.comparecarrinhos.model.Market;
 import com.comparecarrinhos.repository.MarketRepository;
 import com.comparecarrinhos.repository.ProductPriceRepository;
 import org.springframework.web.bind.annotation.*;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 
 import java.util.*;
 
@@ -83,7 +86,10 @@ public class CartController {
 
     // Metodo auxiliar para arredondar (adicione-o no final da classe, antes da última chave })
     private Double round(Double value) {
-        return Math.round(value * 100.0) / 100.0;
+        if (value == null) return 0.0;
+        return BigDecimal.valueOf(value)
+                .setScale(2, RoundingMode.HALF_UP)
+                .doubleValue();
     }
 
 
