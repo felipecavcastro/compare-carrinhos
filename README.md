@@ -19,8 +19,27 @@ O **Compare Carrinhos** é uma aplicação backend desenvolvida em **Java** e **
 - **Testes:** JUnit 5 e Mockito (Testes de Integração)
 - **Gerenciamento de Dependências:** Maven
 
-## 📋 Como Rodar o Projeto
+## 🛠️ Como Rodar o Projeto Localmente
 
-1. Clone o repositório:
+### Pré-requisitos
+- **Java 21** ou superior instalado.
+- **Maven** (geralmente já vem integrado no IntelliJ).
+
+### Passo a Passo
+1. **Clone o repositório:**
    ```bash
    git clone https://github.com
+   ```
+   
+2. **Abra o projeto:**
+Importe a pasta do projeto no IntelliJ IDEA (ou em sua IDE de preferência).
+
+3. **Aguarde as dependências:**
+O Maven irá baixar automaticamente as bibliotecas necessárias (Spring Boot, SQLite, etc.).
+
+4. **Execute a aplicação:**
+Rode o arquivo ComparecarrinhosApplication.java. O banco de dados SQLite (comparecarrinhos.db) será criado automaticamente na primeira execução.
+
+5. **Acesse a API:**
+Documentação Swagger: http://localhost:8080/swagger-ui/index.html
+Interface Web: http://localhost:8080/index.html
